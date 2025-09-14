@@ -1,0 +1,46 @@
+# A conda environment for the NLP project with both Stanza and Benepar.
+# To create this environment from scratch, run: conda env create -f environment.yml
+# To update an existing environment, run: conda env update --file environment.yml --prune
+
+name: coordination
+
+channels:
+  - pytorch      # Prioritize the official PyTorch channel
+  - conda-forge  # For a wide range of up-to-date packages
+  - defaults     # Fallback channel
+
+dependencies:
+  # --- Core Python ---
+  - python=3.11
+
+  # --- PyTorch & Hardware Acceleration (for Hugging Face) ---
+  - pytorch
+  - torchvision
+  - torchaudio
+
+  # --- Hugging Face Suite for LLM Training ---
+  - transformers
+  - datasets
+  - tokenizers
+  - accelerate
+
+  # --- Parsing & Classic NLP ---
+  - stanza         # Kept in case you want to switch back
+  - nltk
+  - spacy          # New dependency for benepar
+
+  # --- Standard Data Science & Utility Toolkit ---
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - jupyterlab
+  - tqdm
+
+  # --- Pip for packages not on Conda or for specific versions ---
+  - pip
+  - pip:
+    - benepar      # Berkeley Neural Parser
+
+# Note: The spaCy and benepar models are best downloaded from the command line
+# after the environment is created and activated.
