@@ -19,5 +19,5 @@
 # Your programs to run.
 eval "$(/gscratch/stf/jiamu/gscratch/stf/jiamu/miniconda3/bin/conda shell.bash hook)"
 conda activate coordination
-python3 -m corpus.filter_b
+python3 -m corpus.filter_b > filter_b_log
 conda deactivate
