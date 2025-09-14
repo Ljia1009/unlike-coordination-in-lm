@@ -3,7 +3,7 @@ import benepar
 from nltk.tree import Tree
 import os
 from tqdm import tqdm
-
+benepar.download('benepar_en3')
 
 def setup_benepar_pipeline():
     """
