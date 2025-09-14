@@ -2,7 +2,7 @@ import stanza
 from nltk.tree import Tree
 import os
 from tqdm import tqdm
-
+benepar.download('benepar_en3')
 
 def setup_stanza_pipeline():
     """Initializes and returns the Stanza pipeline. This is slow, so we only do it once."""
