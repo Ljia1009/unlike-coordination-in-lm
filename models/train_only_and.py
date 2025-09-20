@@ -38,9 +38,9 @@ def find_latest_checkpoint(output_dir: str):
 
 def main():
     # --- Configuration ---
-    FILTERED_DATA_FILE = "/Users/jia/Documents/Thesis/experiments/filtered_dataset_only_and.txt"
-    TOKENIZER_PATH = "./filtered_tokenizer"
-    MODEL_OUTPUT_PATH = "./filtered_gpt2_model"
+    FILTERED_DATA_FILE = "/gscratch/stf/jiamu/unlike-coordination-in-lm/filtered_dataset_only_and.txt"
+    TOKENIZER_PATH = "./models/filtered_and_tokenizer"
+    MODEL_OUTPUT_PATH = "./models/filtered_and_gpt2_model"
 
     # --- Step 1: Train the Tokenizer ---
     # Check if the tokenizer has already been trained
@@ -124,7 +124,7 @@ def main():
         logging_steps=100,   # More frequent logging
         prediction_loss_only=True,
         dataloader_drop_last=True,  # Avoid uneven batches
-        # fp16=True,  # Mixed precision not supported on MPS
+        fp16=True,  # Mixed precision not supported on MPS
     )
 
     trainer = Trainer(
