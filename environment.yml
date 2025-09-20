@@ -14,7 +14,7 @@ dependencies:
   - python=3.11
 
   # --- PyTorch & Hardware Acceleration (for Hugging Face) ---
-  - pytorch
+  - pytorch >= 2.6.0
   - torchvision
   - torchaudio
 
@@ -36,7 +36,7 @@ dependencies:
   - matplotlib
   - jupyterlab
   - tqdm
-
+  
   # --- Pip for packages not on Conda or for specific versions ---
   - pip
   - pip:
