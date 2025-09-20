@@ -5,11 +5,10 @@
 #SBATCH --mail-user=jiamuluo@uw.edu
 
 #SBATCH --account=stf
-#SBATCH --partition=gpu-2080ti
+#SBATCH --partition=cpu-g2
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=16
 #SBATCH --mem=64G
-#SBATCH --gpus=1
 #SBATCH --time=03-12:00:00 # Max runtime in DD-HH:MM:SS format.
 
 #SBATCH --export=all
