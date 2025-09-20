@@ -2,6 +2,7 @@ import os
 from tokenizers import ByteLevelBPETokenizer
 from transformers import GPT2Config, GPT2LMHeadModel, GPT2TokenizerFast, DataCollatorForLanguageModeling
 from transformers import Trainer, TrainingArguments
+from transformers.trainer_utils import get_last_checkpoint
 from datasets import load_dataset
 
 
@@ -26,11 +27,20 @@ def train_tokenizer(data_file: str, output_dir: str):
     print(f"Tokenizer trained and saved to {output_dir}")
 
 
+def find_latest_checkpoint(output_dir: str):
+    """Return the path to the latest checkpoint in output_dir, or None if none exist."""
+    try:
+        return get_last_checkpoint(output_dir)
+    except Exception:
+        # If the directory doesn't exist or is not a HF checkpoint dir
+        return None
+
+
 def main():
     # --- Configuration ---
-    FILTERED_DATA_FILE = "/Users/jia/Documents/Thesis/experiments/filtered_dataset_only_and.txt"
-    TOKENIZER_PATH = "./filtered_tokenizer"
-    MODEL_OUTPUT_PATH = "./filtered_gpt2_model"
+    FILTERED_DATA_FILE = "/gscratch/stf/jiamu/unlike-coordination-in-lm/filtered_dataset_only_and.txt"
+    TOKENIZER_PATH = "./models/filtered_and_tokenizer"
+    MODEL_OUTPUT_PATH = "./models/filtered_and_gpt2_model"
 
     # --- Step 1: Train the Tokenizer ---
     # Check if the tokenizer has already been trained
@@ -114,7 +124,7 @@ def main():
         logging_steps=100,   # More frequent logging
         prediction_loss_only=True,
         dataloader_drop_last=True,  # Avoid uneven batches
-        # fp16=True,  # Mixed precision not supported on MPS
+        fp16=True,  # Mixed precision not supported on MPS
     )
 
     trainer = Trainer(
@@ -126,8 +136,14 @@ def main():
     )
 
     # --- Step 6: Start Training ---
+    latest_ckpt = find_latest_checkpoint(MODEL_OUTPUT_PATH)
+    if latest_ckpt:
+        print(f"Resuming training from checkpoint: {latest_ckpt}")
+    else:
+        print("No checkpoint found. Starting fresh training...")
+
     print("Starting model training...")
-    trainer.train()
+    trainer.train(resume_from_checkpoint=latest_ckpt)
     print("Training complete.")
 
     # --- Step 7: Save the Final Model and Tokenizer ---
