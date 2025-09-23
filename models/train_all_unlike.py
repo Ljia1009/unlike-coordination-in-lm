@@ -30,10 +30,36 @@ def train_tokenizer(data_file: str, output_dir: str):
 def find_latest_checkpoint(output_dir: str):
     """Return the path to the latest checkpoint in output_dir, or None if none exist."""
     try:
-        return get_last_checkpoint(output_dir)
+        # First try the standard HuggingFace method
+        checkpoint = get_last_checkpoint(output_dir)
+        if checkpoint:
+            return checkpoint
     except Exception:
-        # If the directory doesn't exist or is not a HF checkpoint dir
+        pass
+
+    # Fallback: manually look for checkpoint directories
+    if not os.path.exists(output_dir):
         return None
+
+    # Look for checkpoint-* directories
+    checkpoint_dirs = []
+    for item in os.listdir(output_dir):
+        if item.startswith('checkpoint-') and os.path.isdir(os.path.join(output_dir, item)):
+            try:
+                # Extract step number from directory name
+                step_num = int(item.split('-')[1])
+                checkpoint_dirs.append(
+                    (step_num, os.path.join(output_dir, item)))
+            except (ValueError, IndexError):
+                continue
+
+    if not checkpoint_dirs:
+        return None
+
+    # Return the checkpoint with the highest step number
+    latest_checkpoint = max(checkpoint_dirs, key=lambda x: x[0])[1]
+    print(f"Found checkpoint directory: {latest_checkpoint}")
+    return latest_checkpoint
 
 
 def main():
@@ -136,6 +162,11 @@ def main():
     )
 
     # --- Step 6: Start Training ---
+    print(f"Looking for checkpoints in: {MODEL_OUTPUT_PATH}")
+    print(f"Directory exists: {os.path.exists(MODEL_OUTPUT_PATH)}")
+    if os.path.exists(MODEL_OUTPUT_PATH):
+        print(f"Contents: {os.listdir(MODEL_OUTPUT_PATH)}")
+
     latest_ckpt = find_latest_checkpoint(MODEL_OUTPUT_PATH)
     if latest_ckpt:
         print(f"Resuming training from checkpoint: {latest_ckpt}")
