@@ -5,7 +5,7 @@
 #SBATCH --mail-user=jiamuluo@uw.edu
 
 #SBATCH --account=stf
-#SBATCH --partition=cpu-g2
+#SBATCH --partition=gpu-2080ti
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=16
 #SBATCH --mem=64G
