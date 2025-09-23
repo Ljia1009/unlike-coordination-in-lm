@@ -12,11 +12,11 @@
 #SBATCH --time=03-12:00:00 # Max runtime in DD-HH:MM:SS format.
 
 #SBATCH --export=all
-#SBATCH --output=dis-and.out # where STDOUT goes
-#SBATCH --error=dis-and.error # where STDERR goes
+#SBATCH --output=dis-all.out # where STDOUT goes
+#SBATCH --error=dis-all.error # where STDERR goes
 
 # Your programs to run.
 eval "$(/gscratch/stf/jiamu/gscratch/stf/jiamu/miniconda3/bin/conda shell.bash hook)"
 conda activate coordination
-python3 -m corpus.distribution_and > dis_and_stats
+python3 -m corpus.distribution_all > dis_all_stats
 conda deactivate
