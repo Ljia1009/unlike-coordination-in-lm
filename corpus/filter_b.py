@@ -5,6 +5,7 @@ import os
 from tqdm import tqdm
 benepar.download('benepar_en3')
 
+
 def setup_benepar_pipeline():
     """
     Initializes and returns a spaCy pipeline with the benepar component.
@@ -57,14 +58,14 @@ def has_unlike_conjuncts(tree: Tree) -> bool:
 
     # --- Check the current node for the pattern ---
     # 1. Find all CC nodes (coordinating conjunctions)
-    has_cc = any(child.label() ==
-                 'CC' for child in tree if isinstance(child, Tree))
+    cc_nodes = [child for child in tree if isinstance(
+        child, Tree) and child.label() == 'CC']
 
-    if has_cc:
+    if cc_nodes:
         # 2. Get all conjuncts (phrases that are not CC nodes)
         conjuncts = [
             child for child in tree
-            if isinstance(child, Tree) and child.label() != 'CC' and child.height() > 2
+            if isinstance(child, Tree) and child.label() != 'CC'
         ]
 
         if len(conjuncts) > 1:
@@ -164,7 +165,7 @@ if __name__ == '__main__':
 
     # --- 2. Prepare Data ---
     input_dataset_path = "corpus/train.corpus"
-    output_dataset_path = "filtered_dataset_all_unlike.txt"
+    output_dataset_path = "filtered_dataset_all_unlike_2.txt"
 
     # --- 3. Run Processing ---
     process_dataset(benepar_pipeline, input_dataset_path, output_dataset_path)
