@@ -64,9 +64,9 @@ def find_latest_checkpoint(output_dir: str):
 
 def main():
     # --- Configuration ---
-    FILTERED_DATA_FILE = "/gscratch/stf/jiamu/unlike-coordination-in-lm/filtered_dataset_all_unlike.txt"
-    TOKENIZER_PATH = "./models/filtered_all_tokenizer"
-    MODEL_OUTPUT_PATH = "./models/filtered_all_gpt2_model"
+    FILTERED_DATA_FILE = "/root/autodl-tmp/corpus/filtered_dataset_all_unlike.txt"
+    TOKENIZER_PATH = "/root/unlike-coordination-in-lm/models/filtered_all_tokenizer"
+    MODEL_OUTPUT_PATH = "/root/autodl-tmp/models/filtered_all_gpt2_model"
 
     # --- Step 1: Train the Tokenizer ---
     # Check if the tokenizer has already been trained
@@ -135,19 +135,20 @@ def main():
     print("Setting up training arguments...")
     training_args = TrainingArguments(
         output_dir=MODEL_OUTPUT_PATH,
-        overwrite_output_dir=True,
+        overwrite_output_dir=False,
         num_train_epochs=1,  # More epochs for better convergence
         per_device_train_batch_size=2,  # Reduced for GPT-2-Large (36 layers)
+        per_device_eval_batch_size=1,
         gradient_accumulation_steps=8,  # Effective batch size = 2 * 8 = 16
-        learning_rate=2.5e-4,  # Lower learning rate for large model
+        learning_rate=5e-5,  # Lower learning rate for large model
         warmup_steps=1000,   # Gradual warmup
         weight_decay=0.01,   # Regularization
         max_grad_norm=1.0,   # Gradient clipping
         save_steps=5000,     # More frequent saves
-        save_total_limit=3,  # Keep more checkpoints
+        save_total_limit=2,  # Keep more checkpoints
         eval_strategy="steps",
-        eval_steps=5000,
-        logging_steps=100,   # More frequent logging
+        eval_steps=20000,
+        logging_steps=2000,   # More frequent logging
         prediction_loss_only=True,
         dataloader_drop_last=True,  # Avoid uneven batches
         fp16=True,  # Mixed precision not supported on MPS

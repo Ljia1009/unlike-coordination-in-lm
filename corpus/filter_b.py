@@ -164,8 +164,8 @@ if __name__ == '__main__':
     benepar_pipeline = setup_benepar_pipeline()
 
     # --- 2. Prepare Data ---
-    input_dataset_path = "corpus/train.corpus"
-    output_dataset_path = "filtered_dataset_all_unlike_2.txt"
+    input_dataset_path = "/root/autodl-tmp/corpus/train.corpus"
+    output_dataset_path = "/root/filtered_dataset_all_unlike.txt"
 
     # --- 3. Run Processing ---
     process_dataset(benepar_pipeline, input_dataset_path, output_dataset_path)
