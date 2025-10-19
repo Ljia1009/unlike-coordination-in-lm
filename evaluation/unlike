@@ -1,0 +1,124 @@
+------ Based on Kallini and Fellbaum (2021)'s results, we include unlike coordinations of the following categories: ------
+------ NP + SBAR, NP + VP, ADJP + VP, ADVP + PP, NP + ADJP, PP + VP, PP + ADVP, NP + PP, PP + NP, and VP + NP. ------
+------ Their releative frequency is 0.121, 0.099, 0.073, 0.065, 0.065, 0.057, 0.057, 0.047, 0.045, 0.039. ------
+------ The corresponding number, after rough adjustment, of sentences for each category is 18, 15, 11, 10, 10, 9, 9, 7, 6, 5. ------
+
+------ NP + SBAR (18) ------
+You can depend on my assistant and that he will be on time .
+She mentioned the project and that it was already approved .
+I believe your story and that you told the truth .
+The manager questioned the plan and whether it could work .
+The government proposed a tax increase and that it would be effective immediately .
+We discussed the proposal and how it needed revision .
+They heard the news and that it shocked everyone .
+He admired her honesty and that she never lied .
+The teacher emphasized the deadline and that no extensions would be given .
+The team reported the results and that the experiment had succeeded .
+She recognized his name and that he was a famous writer .
+They understood the instructions and that the task would be difficult .
+He explained the problem and that it couldn’t be fixed easily .
+The child believed the story as well as that the monster was real .
+The company valued innovation rather than that employees follow every tradition .
+The professor evaluated the paper and how it needed more research .
+The lawyer advised the client and that he should not admit guilt .
+Two people talked about America and what they will do to lead it .
+
+------ NP + VP (15) ------
+Voids are a nightmare and initialed by the employees .
+She’s a doctor and works at the local hospital .
+The city is a tourist spot and attracts thousands every summer .
+Birds are an amazing creature and descended from dinosaurs .
+The dog is a hunter and chases squirrels in the yard .
+My brother is a musician and performs in a band .
+The new student is a prodigy and solves complex problems easily .
+The company is a leader in technology and develops cutting-edge software .
+AI is a stochastic parrot and repeats everything it hears .
+The garden is a mess and needs cleaning .
+The professor is a linguist and studies ancient languages .
+The problem is a mystery and confuses everyone .
+The class is a requirement and taught by Dr. Smith .
+The film is a masterpiece and directed by Lucas .
+This project is a success and motivates the whole team .
+
+------ ADJP + VP (11) ------
+That was manipulative and designed to keep her in the dark .
+His tone was harsh and meant to intimidate .
+The comment was rude and intended to hurt her feelings .
+The movie was funny and made everyone laugh .
+The song was catchy and stuck in my head .
+The plan was risky and could have failed .
+The task is difficult and requires patience .
+The weather now is gloomy and does not encourage outdoor activity .
+Lord of the Rings is fascinating and inspired many readers .
+Les Miserables is great and has been adapted many times .
+The reunion party was exciting and brought people together .
+
+------ ADVP + PP (10) ------
+The phenomenon fall in to place organically and with ease .
+She answered quickly and without hesitation .
+He spoke softly and with confidence .
+The team is working efficiently and under tight deadlines .
+She handled the situation gracefully and with care .
+The flowers grow naturally and in perfect shape .
+She replied calmly and with a smile .
+The children played noisily and in the backyard .
+The car stopped suddenly and at the intersection .
+You reacted positively and with enthusiasm .
+
+------ NP + ADJP (10) ------
+This guy is a free spirit and playful .
+My boss is a perfectionist and demanding .
+The professor is a true scholar and inspiring .
+She is a genius and creative .
+Sandy is a Republican and proud of it .
+Their child is a bright student and curious of the world .
+That actor is a rising star and talented .
+The city is a cultural hub and vibrant .
+University of Washington is a prestigious institution and affordable .
+His solution is a temporary fix and unsatisfactory.
+
+------ PP + VP (9) ------
+Those leaders insist that they are still in charge and leading the people .
+The company remains under pressure and struggling to stay afloat .
+My fellow students were at risk and failing their classes .
+The soldiers are in position and waiting for orders .
+We will be on strike and demanding better pay .
+The child was in bed and pretending to sleep .
+The couple was on vacation and exploring the countryside .
+She was on duty and handling customer complaints .
+Their project is behind schedule and facing budget cuts .
+
+------ PP + ADVP (9) ------
+A big question many taxpayers face is whether to file by paper or electronically .
+You can pay the bill by mail or online .
+I can communicate both in person and virtually .
+The assignment may be submitted on paper or digitally .
+The tickets can be purchased at the counter or online .
+I don't know if I should take this exam on class or online .
+The money can be sent by check or digitally .
+Our conference will be held in the conference room and remotely .
+The results will be announced on the website and personally .
+
+------ NP + PP (7) ------
+I punched him a lot of times and with all my might .
+She greeted him a second time and with a warm smile .
+They examined the evidence a few times and under close supervision .
+The teacher repeated the instructions several times and in different ways .
+I tested the sample multiple times and under varying temperatures .
+She read the poem three times and with deep emotion .
+He sang the song a few times and with surprising passion .
+
+------ PP + NP (6) ------
+More Americans work out of the house and longer hours .
+The children played in the yard and games all afternoon .
+She slept on the couch and only a few hours last night .
+I studied at the library and extra chapters for the exam .
+They will meet at the park and every weekend in summer.
+He cried in his room and many nights in a row .
+
+------ VP + NP (5) ------
+Erosion has left the brick structures crumbling and a clear safety hazard .
+The scandal made the politician resigning and a public disgrace .
+The new policy rendered the workers feeling powerless and a divided group .
+Earthquake left the city trembling and a pile of rubble .
+The delay made the passengers waiting and a frustrated crowd .

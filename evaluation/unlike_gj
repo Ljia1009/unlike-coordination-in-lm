@@ -1,0 +1,86 @@
+------ This contains a set of 20 gramaticality judgement tests related to unlike coordination. ------
+------ They are collected from separate relevant literature and adapted for this context. ------
+------ In each test, if there are multiple possible sentences, they are formed as similar to each others as possible. ------
+------ A model that commands unlike coordination should be able to correctly classify the grammaticality of the sentences. ------
+------ Also, these tests should allow us to inspect the model's knowledge of unlike coordination. ------
+
+------ Test: selection violation ------
+You can depend on my assistant and that he will be on time .
+* You can depend on that he will be on time .
+
+------ Test: conjunct position phenomenon ------
+You can depend on my assistant and that he will be on time .
+* You can depend on that he will be on time and my assistant .
+
+------ Test: selection violation; CP as NP requirement ------
+That he will be on time, you can depend on .
+* You can depend on that he will be on time . 
+
+------ Test: verb dependency ------
+This depends on my assistant and that he will be on time .
+* This strengthens the claim and that my assistant will be on time .
+
+------ Test: category mismatch restricted ------
+Hobbs ended up liking Rhodes and hating Barnes .
+* Hobbs ended up liking Rhodes and to hate Barnes .
+
+------ Test: conjunct position phenomenon ------
+The once and future king .
+* The future and once king .
+
+------ Test: conjunct position phenomenon ------
+Sandy is a Republican and proud of it .
+* Sandy is proud of it and a Republican .
+
+------ Test: category mismatch restricted and counter example ------
+She thinks that the world is flat and lots of other insane things .
+* She thinks that the world is flat and another discredited thing .
+
+------ Test: category mismatch restricted ------
+The Spartans ate on parched corn .
+* The Spartans ate wheat and on parched corn .
+
+------ Test: category mismatch restricted ------
+She finally met Bill, and later with Sarah .
+* She finally met Bill and with Sarah .
+
+------ Test: mismatch topicalization ------
+She finally met Bill, and later with Sarah .
+* Bill and with Sarah, she finally met .
+
+------ Test: mismatch topicalization ------
+She eats beans and with her hands .
+* beans and with her hands, she eats .
+
+------ Test: category mismatch restricted ------
+Sandy hopes for a breakthrough and to get some credit for it .
+* Sandy hopes for to get some credit for it and a breakthrough .
+
+------ Test: category mismatch restricted ------
+We hope that 2013 numbers are much higher and for better performance next year .
+* We hope that 2013 numbers are much higher and a better performance next year .
+
+------ Test: category mismatch restricted ------
+Danny became a political radical and very antisocial .
+* Danny became a political radical and under suspicion .
+
+------ Test: dual roles of predicate and modifier? ------
+St. Peter did reside in Rome .
+St. Peter did die in Rome .
+St. Peter did reside and die in Rome .
+
+------ Test: deletion possibility ------
+I eat meat and at home .
+* Meat and at home do I eat .
+
+------ Test: deletion possibility ------
+I eat neither meat nor at home .
+* Neither meat nor at home do I eat .
+
+------ Test: deletion possibility ------
+He eats only fish raw and only at home .
+* He eats only fish and only at home raw .
+
+------ Test: deletion possibility ------
+John sang a carol and beautifully .
+* John sang beautifully and a carol .
