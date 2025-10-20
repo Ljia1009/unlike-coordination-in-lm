@@ -1,0 +1,571 @@
+{
+  "model_name": "original",
+  "alike": {
+    "total_sentences": 100,
+    "valid_scores": 100,
+    "mean_perplexity": 649.1898019695282,
+    "std_perplexity": 1346.8323794906423,
+    "min_perplexity": 14.838728904724121,
+    "max_perplexity": 10727.9033203125,
+    "scores": [
+      88.19328308105469,
+      68.04972839355469,
+      237.95297241210938,
+      354.2301940917969,
+      134.455810546875,
+      101.46183776855469,
+      1687.399658203125,
+      307.1248779296875,
+      616.466552734375,
+      48.734066009521484,
+      31.484874725341797,
+      38.307315826416016,
+      70.57084655761719,
+      52.3690299987793,
+      19.677989959716797,
+      1397.239501953125,
+      658.1449584960938,
+      360.0384826660156,
+      107.15974426269531,
+      1566.7841796875,
+      183.09869384765625,
+      207.52935791015625,
+      193.37582397460938,
+      169.48126220703125,
+      87.27372741699219,
+      14.838728904724121,
+      838.8671264648438,
+      412.6851806640625,
+      255.6880645751953,
+      126.75094604492188,
+      233.81556701660156,
+      184.95724487304688,
+      62.23310089111328,
+      276.44256591796875,
+      94.62213897705078,
+      3382.197021484375,
+      396.8540954589844,
+      454.9086608886719,
+      3954.072021484375,
+      289.3629150390625,
+      1620.1005859375,
+      64.34703826904297,
+      204.50070190429688,
+      562.1962890625,
+      3261.084716796875,
+      74.69578552246094,
+      78.72708892822266,
+      41.00316619873047,
+      40.72651672363281,
+      45.60700988769531,
+      149.7191162109375,
+      305.9619140625,
+      80.66602325439453,
+      105.3822021484375,
+      206.94967651367188,
+      189.35296630859375,
+      306.4593811035156,
+      1804.1419677734375,
+      481.26580810546875,
+      137.32310485839844,
+      2902.652099609375,
+      4057.8623046875,
+      1120.0880126953125,
+      232.0589599609375,
+      356.5375671386719,
+      108.88236236572266,
+      21.78188705444336,
+      96.70777893066406,
+      188.6680908203125,
+      74.12665557861328,
+      187.311279296875,
+      84.85789489746094,
+      4090.76513671875,
+      366.32891845703125,
+      40.18080520629883,
+      179.27645874023438,
+      686.111572265625,
+      199.13233947753906,
+      161.80462646484375,
+      44.76226806640625,
+      99.96487426757812,
+      223.15635681152344,
+      58.84087371826172,
+      105.52203369140625,
+      41.820404052734375,
+      92.92915344238281,
+      44.793731689453125,
+      115.14453125,
+      85.23194885253906,
+      54.39160919189453,
+      1641.407470703125,
+      1357.3955078125,
+      484.93914794921875,
+      1122.119384765625,
+      903.778564453125,
+      772.2186279296875,
+      192.46923828125,
+      876.5074462890625,
+      10727.9033203125,
+      1193.437744140625
+    ]
+  },
+  "unlike": {
+    "total_sentences": 100,
+    "valid_scores": 100,
+    "mean_perplexity": 289.804550857544,
+    "std_perplexity": 331.0104392867113,
+    "min_perplexity": 32.530967712402344,
+    "max_perplexity": 1961.6514892578125,
+    "scores": [
+      65.94536590576172,
+      94.53721618652344,
+      92.50945281982422,
+      125.37548828125,
+      54.63330841064453,
+      205.57998657226562,
+      117.3370361328125,
+      206.32546997070312,
+      233.20616149902344,
+      121.72953796386719,
+      64.38512420654297,
+      86.9007339477539,
+      121.50285339355469,
+      106.04344177246094,
+      1700.411865234375,
+      222.96957397460938,
+      169.08258056640625,
+      90.83326721191406,
+      373.68023681640625,
+      146.4412384033203,
+      75.43981170654297,
+      145.62789916992188,
+      235.33274841308594,
+      32.530967712402344,
+      744.2483520507812,
+      83.13410186767578,
+      977.75732421875,
+      345.38372802734375,
+      259.71630859375,
+      321.1627197265625,
+      140.68551635742188,
+      71.35887145996094,
+      89.20122528076172,
+      99.48843383789062,
+      291.75482177734375,
+      244.01962280273438,
+      215.63632202148438,
+      103.36106872558594,
+      83.5538101196289,
+      362.3978576660156,
+      260.878662109375,
+      179.57290649414062,
+      393.57012939453125,
+      261.22174072265625,
+      909.8572998046875,
+      381.877685546875,
+      225.8350830078125,
+      611.0164794921875,
+      1351.3720703125,
+      156.01609802246094,
+      739.98779296875,
+      861.015869140625,
+      273.2668762207031,
+      376.1279296875,
+      275.1515197753906,
+      395.9173583984375,
+      476.9596252441406,
+      86.16926574707031,
+      97.8000717163086,
+      112.56536865234375,
+      243.967041015625,
+      73.38874816894531,
+      64.5567626953125,
+      1961.6514892578125,
+      99.65032958984375,
+      186.62374877929688,
+      101.78549194335938,
+      145.00711059570312,
+      209.44725036621094,
+      131.72140502929688,
+      109.61991882324219,
+      456.60333251953125,
+      251.41964721679688,
+      782.5315551757812,
+      89.86089324951172,
+      274.1956787109375,
+      128.5335235595703,
+      122.07888793945312,
+      408.0186767578125,
+      222.85086059570312,
+      81.89230346679688,
+      88.22091674804688,
+      88.23930358886719,
+      92.52079010009766,
+      123.29612731933594,
+      117.80757141113281,
+      236.9682159423828,
+      112.35906982421875,
+      73.20906066894531,
+      195.872314453125,
+      230.6501922607422,
+      85.2004623413086,
+      172.38833618164062,
+      122.78306579589844,
+      107.57854461669922,
+      849.0164794921875,
+      460.8384704589844,
+      448.8890380859375,
+      1145.555419921875,
+      336.2557678222656
+    ]
+  },
+  "grammaticality_judgment": {
+    "total_tests": 20,
+    "test_results": [
+      {
+        "test_purpose": "selection violation",
+        "grammatical_sentences": [
+          "You can depend on my assistant and that he will be on time ."
+        ],
+        "ungrammatical_sentences": [
+          "You can depend on that he will be on time ."
+        ],
+        "grammatical_scores": [
+          65.94536590576172
+        ],
+        "ungrammatical_scores": [
+          55.0396728515625
+        ],
+        "correct_pairs": 0,
+        "total_pairs": 1
+      },
+      {
+        "test_purpose": "conjunct position phenomenon",
+        "grammatical_sentences": [
+          "You can depend on my assistant and that he will be on time ."
+        ],
+        "ungrammatical_sentences": [
+          "You can depend on that he will be on time and my assistant ."
+        ],
+        "grammatical_scores": [
+          65.94536590576172
+        ],
+        "ungrammatical_scores": [
+          84.65214538574219
+        ],
+        "correct_pairs": 1,
+        "total_pairs": 1
+      },
+      {
+        "test_purpose": "selection violation; CP as NP requirement",
+        "grammatical_sentences": [
+          "That he will be on time, you can depend on ."
+        ],
+        "ungrammatical_sentences": [
+          "You can depend on that he will be on time ."
+        ],
+        "grammatical_scores": [
+          497.9201354980469
+        ],
+        "ungrammatical_scores": [
+          55.0396728515625
+        ],
+        "correct_pairs": 0,
+        "total_pairs": 1
+      },
+      {
+        "test_purpose": "verb dependency",
+        "grammatical_sentences": [
+          "This depends on my assistant and that he will be on time ."
+        ],
+        "ungrammatical_sentences": [
+          "This strengthens the claim and that my assistant will be on time ."
+        ],
+        "grammatical_scores": [
+          121.75177001953125
+        ],
+        "ungrammatical_scores": [
+          222.97872924804688
+        ],
+        "correct_pairs": 1,
+        "total_pairs": 1
+      },
+      {
+        "test_purpose": "category mismatch restricted",
+        "grammatical_sentences": [
+          "Hobbs ended up liking Rhodes and hating Barnes ."
+        ],
+        "ungrammatical_sentences": [
+          "Hobbs ended up liking Rhodes and to hate Barnes ."
+        ],
+        "grammatical_scores": [
+          1003.4597778320312
+        ],
+        "ungrammatical_scores": [
+          619.1349487304688
+        ],
+        "correct_pairs": 0,
+        "total_pairs": 1
+      },
+      {
+        "test_purpose": "conjunct position phenomenon",
+        "grammatical_sentences": [
+          "The once and future king ."
+        ],
+        "ungrammatical_sentences": [
+          "The future and once king ."
+        ],
+        "grammatical_scores": [
+          1645.5906982421875
+        ],
+        "ungrammatical_scores": [
+          1650.034912109375
+        ],
+        "correct_pairs": 1,
+        "total_pairs": 1
+      },
+      {
+        "test_purpose": "conjunct position phenomenon",
+        "grammatical_sentences": [
+          "Sandy is a Republican and proud of it ."
+        ],
+        "ungrammatical_sentences": [
+          "Sandy is proud of it and a Republican ."
+        ],
+        "grammatical_scores": [
+          97.8000717163086
+        ],
+        "ungrammatical_scores": [
+          89.68585968017578
+        ],
+        "correct_pairs": 0,
+        "total_pairs": 1
+      },
+      {
+        "test_purpose": "category mismatch restricted and counter example",
+        "grammatical_sentences": [
+          "She thinks that the world is flat and lots of other insane things ."
+        ],
+        "ungrammatical_sentences": [
+          "She thinks that the world is flat and another discredited thing ."
+        ],
+        "grammatical_scores": [
+          115.76851654052734
+        ],
+        "ungrammatical_scores": [
+          173.52853393554688
+        ],
+        "correct_pairs": 1,
+        "total_pairs": 1
+      },
+      {
+        "test_purpose": "category mismatch restricted",
+        "grammatical_sentences": [
+          "The Spartans ate on parched corn ."
+        ],
+        "ungrammatical_sentences": [
+          "The Spartans ate wheat and on parched corn ."
+        ],
+        "grammatical_scores": [
+          4570.0283203125
+        ],
+        "ungrammatical_scores": [
+          1369.791748046875
+        ],
+        "correct_pairs": 0,
+        "total_pairs": 1
+      },
+      {
+        "test_purpose": "category mismatch restricted",
+        "grammatical_sentences": [
+          "She finally met Bill, and later with Sarah ."
+        ],
+        "ungrammatical_sentences": [
+          "She finally met Bill and with Sarah ."
+        ],
+        "grammatical_scores": [
+          936.3760986328125
+        ],
+        "ungrammatical_scores": [
+          254.99794006347656
+        ],
+        "correct_pairs": 0,
+        "total_pairs": 1
+      },
+      {
+        "test_purpose": "mismatch topicalization",
+        "grammatical_sentences": [
+          "She finally met Bill, and later with Sarah ."
+        ],
+        "ungrammatical_sentences": [
+          "Bill and with Sarah, she finally met ."
+        ],
+        "grammatical_scores": [
+          936.3760986328125
+        ],
+        "ungrammatical_scores": [
+          1321.314453125
+        ],
+        "correct_pairs": 1,
+        "total_pairs": 1
+      },
+      {
+        "test_purpose": "mismatch topicalization",
+        "grammatical_sentences": [
+          "She eats beans and with her hands ."
+        ],
+        "ungrammatical_sentences": [
+          "beans and with her hands, she eats ."
+        ],
+        "grammatical_scores": [
+          152.173828125
+        ],
+        "ungrammatical_scores": [
+          1407.0262451171875
+        ],
+        "correct_pairs": 1,
+        "total_pairs": 1
+      },
+      {
+        "test_purpose": "category mismatch restricted",
+        "grammatical_sentences": [
+          "Sandy hopes for a breakthrough and to get some credit for it ."
+        ],
+        "ungrammatical_sentences": [
+          "Sandy hopes for to get some credit for it and a breakthrough ."
+        ],
+        "grammatical_scores": [
+          82.87454223632812
+        ],
+        "ungrammatical_scores": [
+          132.20252990722656
+        ],
+        "correct_pairs": 1,
+        "total_pairs": 1
+      },
+      {
+        "test_purpose": "category mismatch restricted",
+        "grammatical_sentences": [
+          "We hope that 2013 numbers are much higher and for a better performance next year ."
+        ],
+        "ungrammatical_sentences": [
+          "We hope that 2013 numbers are much higher and a better performance next year ."
+        ],
+        "grammatical_scores": [
+          137.63429260253906
+        ],
+        "ungrammatical_scores": [
+          147.6692657470703
+        ],
+        "correct_pairs": 1,
+        "total_pairs": 1
+      },
+      {
+        "test_purpose": "category mismatch restricted",
+        "grammatical_sentences": [
+          "Danny became a political radical and very antisocial ."
+        ],
+        "ungrammatical_sentences": [
+          "Danny became a political radical and under suspicion ."
+        ],
+        "grammatical_scores": [
+          229.4226531982422
+        ],
+        "ungrammatical_scores": [
+          231.48513793945312
+        ],
+        "correct_pairs": 1,
+        "total_pairs": 1
+      },
+      {
+        "test_purpose": "dual roles of predicate and modifier",
+        "grammatical_sentences": [
+          "St. Peter did reside in Rome .",
+          "St. Peter did die in Rome .",
+          "St. Peter did reside and die in Rome ."
+        ],
+        "ungrammatical_sentences": [],
+        "grammatical_scores": [
+          88.78878784179688,
+          77.2119140625,
+          127.3211441040039
+        ],
+        "ungrammatical_scores": [],
+        "correct_pairs": 0,
+        "total_pairs": 0
+      },
+      {
+        "test_purpose": "deletion possibility",
+        "grammatical_sentences": [
+          "I eat meat and at home ."
+        ],
+        "ungrammatical_sentences": [
+          "Meat and at home do I eat ."
+        ],
+        "grammatical_scores": [
+          124.41766357421875
+        ],
+        "ungrammatical_scores": [
+          300.6279602050781
+        ],
+        "correct_pairs": 1,
+        "total_pairs": 1
+      },
+      {
+        "test_purpose": "deletion possibility",
+        "grammatical_sentences": [
+          "I eat neither meat nor at home ."
+        ],
+        "ungrammatical_sentences": [
+          "Neither meat nor at home do I eat ."
+        ],
+        "grammatical_scores": [
+          187.1995849609375
+        ],
+        "ungrammatical_scores": [
+          360.68115234375
+        ],
+        "correct_pairs": 1,
+        "total_pairs": 1
+      },
+      {
+        "test_purpose": "deletion possibility",
+        "grammatical_sentences": [
+          "He eats only fish raw and only at home ."
+        ],
+        "ungrammatical_sentences": [
+          "He eats only fish and only at home raw ."
+        ],
+        "grammatical_scores": [
+          361.21142578125
+        ],
+        "ungrammatical_scores": [
+          734.0250244140625
+        ],
+        "correct_pairs": 1,
+        "total_pairs": 1
+      },
+      {
+        "test_purpose": "deletion possibility",
+        "grammatical_sentences": [
+          "John sang a carol and beautifully ."
+        ],
+        "ungrammatical_sentences": [
+          "John sang beautifully and a carol ."
+        ],
+        "grammatical_scores": [
+          2127.24365234375
+        ],
+        "ungrammatical_scores": [
+          1460.455078125
+        ],
+        "correct_pairs": 0,
+        "total_pairs": 1
+      }
+    ],
+    "overall_accuracy": 0.631578947368421,
+    "correct_predictions": 12,
+    "total_predictions": 19
+  }
+}
