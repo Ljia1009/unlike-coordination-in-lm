@@ -136,22 +136,24 @@ def main():
     training_args = TrainingArguments(
         output_dir=MODEL_OUTPUT_PATH,
         overwrite_output_dir=False,
-        num_train_epochs=1,  # More epochs for better convergence
-        per_device_train_batch_size=2,  # Reduced for GPT-2-Large (36 layers)
-        per_device_eval_batch_size=1,
-        gradient_accumulation_steps=8,  # Effective batch size = 2 * 8 = 16
+        num_train_epochs=5,  # More epochs for better convergence
+        per_device_train_batch_size=32,  # Reduced for GPT-2-Large (36 layers)
+        per_device_eval_batch_size=32,
+        gradient_accumulation_steps=1,  # Effective batch size = 2 * 32 = 64
         learning_rate=5e-5,  # Lower learning rate for large model
         warmup_steps=1000,   # Gradual warmup
         weight_decay=0.01,   # Regularization
         max_grad_norm=1.0,   # Gradient clipping
-        save_steps=5000,     # More frequent saves
-        save_total_limit=2,  # Keep more checkpoints
-        eval_strategy="steps",
-        eval_steps=20000,
-        logging_steps=2000,   # More frequent logging
+        save_strategy = 'epoch',
+        # save_steps=5000,     # More frequent saves
+        save_total_limit=5,  # Keep more checkpoints
+        eval_strategy="epoch",
+        eval_steps=30000,
+        logging_steps=3000,   # More frequent logging
         prediction_loss_only=True,
         dataloader_drop_last=True,  # Avoid uneven batches
-        fp16=True,  # Mixed precision not supported on MPS
+        bf16=True,  # Mixed precision not supported on MPS
+        gradient_checkpointing=True
     )
 
     trainer = Trainer(
@@ -171,6 +173,10 @@ def main():
     latest_ckpt = find_latest_checkpoint(MODEL_OUTPUT_PATH)
     if latest_ckpt:
         print(f"Resuming training from checkpoint: {latest_ckpt}")
+        scaler_path = os.path.join(latest_ckpt, "scaler.pt")
+        if os.path.exists(scaler_path):
+            print(f"Deleting old scaler state at {scaler_path} (safe for bf16 resume)")
+            os.remove(scaler_path)
     else:
         print("No checkpoint found. Starting fresh training...")
 
